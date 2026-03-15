@@ -61,8 +61,9 @@ section h3 {
   margin-bottom: 15px;
   padding: 15px;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+  box-shadow: 0 6px 18px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
@@ -72,6 +73,102 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.availability {
+  margin-bottom: 12px;
+}
+
+.spots-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.participants-section {
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid #dbe3ff;
+  border-radius: 10px;
+  background: #f4f7ff;
+}
+
+.participants-title {
+  margin: 0 0 8px;
+  color: #1a237e;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.participants-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.participant-item {
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e6ebff;
+  color: #24315f;
+  font-size: 0.92rem;
+  word-break: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.participant-remove-btn {
+  min-width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b71c1c;
+  background: #d32f2f;
+  color: #ffffff;
+  border-radius: 999px;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 2px 6px rgba(183, 28, 28, 0.35);
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+.participant-remove-btn:hover {
+  background: #b71c1c;
+  box-shadow: 0 3px 8px rgba(183, 28, 28, 0.45);
+}
+
+.participant-remove-btn:active {
+  transform: scale(0.96);
+}
+
+.participant-remove-btn:focus-visible {
+  outline: 2px solid #ff8a80;
+  outline-offset: 2px;
+}
+
+.participants-empty {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #5b6692;
+  font-style: italic;
 }
 
 .form-group {
